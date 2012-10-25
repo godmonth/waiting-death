@@ -1,4 +1,4 @@
-zombie-period
+waiting-death
 =============
 
-zombieperiod
+waiting-death

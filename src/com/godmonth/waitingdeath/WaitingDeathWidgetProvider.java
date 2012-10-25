@@ -1,4 +1,4 @@
-package com.godmonth.zombieperiod;
+package com.godmonth.waitingdeath;
 
 import org.joda.time.DateTime;
 import org.joda.time.Period;
@@ -9,8 +9,8 @@ import android.content.Context;
 import android.util.Log;
 import android.widget.RemoteViews;
 
-public class ZombiePeriodWidgetProvider extends AppWidgetProvider {
-	private static final DateTime start = new DateTime(2000, 1, 1, 0, 0);
+public class WaitingDeathWidgetProvider extends AppWidgetProvider {
+	private static final DateTime start = new DateTime(2004, 2, 5, 0, 0);
 
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager,
 			int[] appWidgetIds) {
@@ -22,6 +22,5 @@ public class ZombiePeriodWidgetProvider extends AppWidgetProvider {
 					+ period.getMonths() + "." + period.getDays());
 			appWidgetManager.updateAppWidget(appWidgetIds[i], views);
 		}
-		Log.i("a", "c");
 	}
 }
